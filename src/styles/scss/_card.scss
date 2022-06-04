@@ -1,0 +1,55 @@
+@import './fonts';
+.card-container{
+    text-align: left;
+    padding: 2em;
+    width: 20em;
+    
+    .card-head, .card-body, .card-footer {
+        margin: 1em 0em;
+    }
+
+    .card-body {
+        font-family: $lexendDeca;
+        font-size: 17px;
+        .card-title{
+            text-transform: uppercase;
+            font-family: $BigShoulder;
+            margin: 1em 0em;
+            color: $Verylightgray;
+        }
+        .card-description{
+            line-height: 1.5em;
+            color: $Transparentwhite;
+        }
+    }  
+}
+
+.card-bg-sedans {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: $Brightorange;
+}
+
+.card-bg-suvs {
+    background-color: $Darkcyan;
+}
+
+.card-bg-luxary {
+    background-color: $Verydarkcyan;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 960px) {
+    .card-bg-sedans {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card-bg-luxary { 
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+    }
+
+}
+

@@ -1,0 +1,25 @@
+@import './colors';
+@import './card';
+.app {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    .main-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .app{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        .main-container {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+.card-container {
+  text-align: left;
+  padding: 2em;
+  width: 20em;
+}
+.card-container .card-head, .card-container .card-body, .card-container .card-footer {
+  margin: 1em 0em;
+}
+.card-container .card-body {
+  font-family: "Lexend Deca";
+  font-size: 17px;
+}
+.card-container .card-body .card-title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  margin: 1em 0em;
+  color: hsl(0deg, 0%, 95%);
+}
+.card-container .card-body .card-description {
+  line-height: 1.5em;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.card-bg-sedans {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.card-bg-suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.card-bg-luxary {
+  background-color: hsl(179deg, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 960px) {
+  .card-bg-sedans {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card-bg-luxary {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+  }
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+.app .main-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 960px) {
+  .app {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .app .main-container {
+    grid-template-columns: 1fr;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*# sourceMappingURL=index.css.map */
