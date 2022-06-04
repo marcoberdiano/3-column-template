@@ -4,6 +4,7 @@
     
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 10em;
     .main-container {
@@ -11,6 +12,15 @@
         align-items: center;
         justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer {
+        font-size: 0.9em;
+        padding-top: 3em;
+        a {
+            text-decoration: none;
+            color: gray
+        }
     }
 }
 

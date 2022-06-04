@@ -7,7 +7,10 @@ function App() {
       <main className="main-container">
         {data.map(card => <Card key={card.name} name={card.name} text={card.text} />)}
       </main>
-      <footer></footer>
+      <footer className="footer">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/marcoberdiano" rel="noopener">Marco</a>.
+      </footer>
     </div>
   );
 }
